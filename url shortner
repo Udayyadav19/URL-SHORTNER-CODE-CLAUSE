@@ -1,0 +1,11 @@
+import pyshorteners
+
+# Create an instance of the Shortener class
+s = pyshorteners.Shortener()
+
+# Shorten a URL
+original_url = "https://www.google.com/imgres?imgurl=https://1.bp.blogspot.com/-ikW5zadDhPk/WNoo8Lk2zRI/AAAAAAAAA24/qxxdzG0vvxIbsMXRumcM7OpNvxusTN1_QCLcB/s1600/Capture.PNG&tbnid=4hj_82UFApx7cM&vet=1&imgrefurl=https://knowledgeofpharma.blogspot.com/2017/03/powder-manufacturing-overview.html&docid=tCqjv7y0PqyUjM&w=748&h=500&itg=1&hl=en-GB&source=sh/x/im/4"
+short_url = s.tinyurl.short(original_url)
+
+print("Original URL:",original_url)
+print("Shortened URL:",short_url)
